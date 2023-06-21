@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    cursor: pointer;
+    
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
