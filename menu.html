@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Menu</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Roboto+Slab:wght@600;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Qwitcher+Grypen:wght@700&family=Roboto+Slab:wght@600;900&display=swap" rel="stylesheet">
+
+        <link href="menu.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="menu">
+            <div class="container">
+            <h2 class="title">Menu</h2>
+
+            <div class="parallaxbg">
+                <img src="./images/parallaxmenu.jpg" class="parallaximg">
+                <h1>Delicious Meals to Choose From</h1>
+            </div>
+
+            <ul class="grid-list"></ul>
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food1.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                        <h3 class="food-name">
+                            Mediterranean Salad
+                        </h3>
+                    <span class="food-price">MVR 95</span>
+                    </div>
+                    <p class="description">
+                        red onions, black olives, lettuces, cucumber, cherry tomatoes, feta cheese and light lemon dressing
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food2.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                        <h3 class="food-name">
+                            Chicken Pizza
+                        </h3>
+                    <span class="food-price">MVR 120</span>
+                    </div>
+                    <p class="description">
+                        smoked chicken, olives and mozarella cheese
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food3.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                        <h3 class="food-name">
+                        Ramen
+                        </h3>
+                    <span class="food-price">MVR 80</span>
+                    </div>
+                    <p class="description">
+                        vegetables, soy sauce and meat of choice (beef, chicken)
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food4.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                        <h3 class="food-name">
+                        Beef Burger
+                        </h3>
+                    <span class="food-price">MVR 72</span>
+                    </div>
+                    <p class="description">
+                        red onion, pickles, mayo, lettuce, tomato and cheese (optional)
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food5.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                    <h3 class="food-name">
+                        Strawberry Pancakes
+                    </h3>
+                    <span class="food-price">MVR 45</span>
+                    </div>
+                    <p class="description">
+                        extra strawberries and syrup: +MVR 20
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="menu-card hover:card">
+                <figure class="card-banner img-holder" style="--width: 300; --height: 300;">
+                    <img src="./images/food6.png" width="300" height="300" class="img-cover">
+                </figure>
+                <div>
+                    <div class="title-wrapper">
+                        <h3 class="food-name">
+                        Fancy Chicken Nuggets
+                        </h3>
+                    <span class="food-price">MVR 30</span>
+                    </div>
+                    <p class="description">
+                    sauce of choice
+                    </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+        var parallaxmenu = document.getElementsByClassName('parallaximg');
+        new simpleParallax(parallaxmenu, {
+            orientation: 'right',
+            scale: 1.5
+        });
+    </script>
+    </body>
+</html>

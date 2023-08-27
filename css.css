@@ -1,0 +1,109 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.scroll {
+    font-family: 'Caveat', cursive;
+    color: #b1afaf;
+}
+
+
+
+h2 {
+    color: #D4AF37;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position:relative;
+    color: #b1afaf;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:  #b1afaf;
+    text-transform: uppercase;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    height: 3px;
+    background:  #b1afaf;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: #b1afaf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1{
+    font-size: 90px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 5px;
+}
+
+
+.button {
+    font-size: 20px;
+    padding: 15px 50px;
+    text-align: center;
+    margin: 20px 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #705e39;
+    color:#b1afaf;
+    margin: 0 15px;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+
+
+.button:hover {
+    color: #200000;
+    background-color: #D4AF37;
+}
